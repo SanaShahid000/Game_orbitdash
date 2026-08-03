@@ -1,0 +1,22 @@
+{
+  "name": "orbit-dash",
+  "version": "1.0.0",
+  "description": "Orbit Dash - a one-tap Phaser 3 playable",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esbuild src/main.js --bundle --outfile=public/game.js --servedir=public --serve=127.0.0.1:8000",
+    "build": "node build.js",
+    "test": "npm run build && node test/smoke.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3",
+    "esbuild": "^0.28.1",
+    "jsdom": "^30.0.1"
+  }
+}
